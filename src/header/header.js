@@ -19,7 +19,7 @@ const header = () => {
 
                     <div className="header__search">
                         <img src={searchIcon} alt="" />
-                        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                        <input id="search-input" type="text" maxLength="800" placeholder="O que você quer ouvir?" />
                     </div>  
 
                     <div className="header__login">
@@ -30,7 +30,6 @@ const header = () => {
                 </div>
 
             </nav>
-
     )
 };
 
