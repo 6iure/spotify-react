@@ -1,8 +1,11 @@
 import React from "react";
 import './sidebar.css';
 import logoSpotify from '../assets/icons/logo-spotify.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const sidebar = () => {
+
     return (
         <div className="sidebar">
         <nav className="sidebar__navigation">
@@ -14,13 +17,13 @@ const sidebar = () => {
             <ul>
                 <li>
                     <a href="/">
-                        <span className="fa fa-home"></span>
+                        <FontAwesomeIcon className="house-icon" icon={"house"}></FontAwesomeIcon>
                         <span>Início</span>
                     </a>
                 </li>
                 <li>
                     <a href="/">
-                        <span className="fa fa-search"></span>
+                        <FontAwesomeIcon className="search-icon" icon={"magnifying-glass"}></FontAwesomeIcon>
                         <span>Buscar</span>
                     </a>
                 </li>
@@ -30,10 +33,10 @@ const sidebar = () => {
         <div className="library">
             <div className="library__content">
                 <button className="library__button">
-                    <span className="fa fas fa-book"></span>
-                    <span>Sua Biblioteca</span>
+                    <FontAwesomeIcon className="book-icon" icon={"book"}></FontAwesomeIcon>
+                    <span className="library-name">Sua Biblioteca</span>
                 </button>
-                <span className="fa fa-plus"></span>
+                <FontAwesomeIcon className="plus-icon" icon={"plus"}></FontAwesomeIcon>
             </div>
 
             <section className="section-playlist">
@@ -46,13 +49,26 @@ const sidebar = () => {
                 </div>
             </section>
 
+            <section className="podcast-section">
+                <div className="podcast-section__content">
+                    <span className="text title">Que tal seguir um podcast novo?</span>
+                    <span className="text subtitle">Avisaremos você sobre novos episódios.</span>
+
+                    <button className="podcast-section__button">
+                        <span>Explorar</span>
+                    </button>
+
+                </div>
+
+            </section>
+
             <div className="cookies">
                 <a href="/">Cookies</a>
             </div>
 
             <div className="languages">
                 <button className="languages__button">
-                    <span className="fa fa-globe"></span>
+                    <FontAwesomeIcon className="globe-icon" icon={"globe"}></FontAwesomeIcon>
                     <span>Português do Brasil</span>
                 </button>
             </div>

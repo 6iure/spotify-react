@@ -6,30 +6,38 @@ import searchIcon from '../assets/icons/search.png';
 
 const header = () => {
     return (
-        <nav className="header__navigation">
+        <main>
 
-                <div className="navigation">
+            <div className="main-container">
 
-                    <button className="arrow-left">
-                        <img src={smallLeft} alt="Seta esquerda" />
-                    </button>
-                    <button className="arrow-right">
-                        <img src={smallRight} alt="Seta direita" />
-                    </button>
+                <nav className="header__navigation">
 
-                    <div className="header__search">
-                        <img src={searchIcon} alt="" />
-                        <input id="search-input" type="text" maxLength="800" placeholder="O que você quer ouvir?" />
-                    </div>  
+                    <div className="navigation">
 
-                    <div className="header__login">
-                        <button className="subscribe">Inscrever-se</button>
-                        <button className="login">Entrar</button>
+                        <button className="arrow-left">
+                            <img src={smallLeft} alt="Seta esquerda" />
+                        </button>
+                        <button className="arrow-right">
+                            <img src={smallRight} alt="Seta direita" />
+                        </button>
+
+                        <div className="header__search">
+                            <img src={searchIcon} alt="" />
+                            <input id="search-input" type="text" maxLength="800" placeholder="O que você quer ouvir?" />
+                        </div>  
+
+                        <div className="header__login">
+                            <button className="subscribe">Inscrever-se</button>
+                            <button className="login">Entrar</button>
+                        </div>
+
                     </div>
 
-                </div>
+                </nav>
 
-            </nav>
+            </div>
+
+        </main>
     )
 };
 
