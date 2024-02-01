@@ -1,5 +1,6 @@
 import React from "react";
 import './header.css';
+import Main from "../main/main"; // Children relation
 import smallLeft from '../assets/icons/small-left.png';
 import smallRight from '../assets/icons/small-right.png';
 import searchIcon from '../assets/icons/search.png';
@@ -34,6 +35,8 @@ const header = () => {
                     </div>
 
                 </nav>
+
+                <Main/>
 
             </div>
 
